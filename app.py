@@ -314,7 +314,7 @@ if uploaded_file:
     st.write(f"### 🔍 Special Notes\n{anatomy.get('special')}")
 
     
-    def generate_pdf(species_name, anatomy):
+  def generate_pdf(species_name, anatomy):
       buffer = BytesIO()
       c = canvas.Canvas(buffer, pagesize=letter)
       width, height = letter
@@ -345,7 +345,7 @@ if uploaded_file:
 
     c.save()
     buffer.seek(0)
-     return buffer
+    return buffer
 
     # Create PDF
      pdf_buffer = generate_pdf(species, anatomy)
@@ -403,6 +403,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
