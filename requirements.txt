@@ -1,0 +1,9 @@
+streamlit
+tensorflow==2.13.0
+numpy
+pillow
+opencv-python
+scikit-learn
+matplotlib
+pandas
+protobuf==3.20.*
