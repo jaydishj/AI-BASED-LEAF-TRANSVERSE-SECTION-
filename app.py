@@ -354,7 +354,8 @@ if uploaded_file:
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
 
     st.subheader("🌱 Vascular  Bundle")
-    st.image("e:/GUIESS RECORD/vacular bundles/vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+    st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
