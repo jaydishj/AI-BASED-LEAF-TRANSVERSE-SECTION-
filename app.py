@@ -2,9 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from io import BytesIO
+
 
 # -----------------------------
 # CONFIG
@@ -314,49 +312,7 @@ if uploaded_file:
     st.write(f"### 🔍 Special Notes\n{anatomy.get('special')}")
 
     
-  def generate_pdf(species_name, anatomy):
-      buffer = BytesIO()
-      c = canvas.Canvas(buffer, pagesize=letter)
-      width, height = letter
-
-      y = height - 50
-      c.setFont("Helvetica-Bold", 16)
-      c.drawString(50, y, f"Leaf Anatomy Report: {species_name}")
-      y -= 30
-
-      c.setFont("Helvetica", 11)
-
-      def add_text(title, content, y):
-        c.setFont("Helvetica-Bold", 12)
-        c.drawString(50, y, title)
-        y -= 18
-        c.setFont("Helvetica", 11)
-
-        for line in content.split("\n"):
-            c.drawString(60, y, line)
-            y -= 15
-        return y - 10
-
-    # Sections
-    y = add_text("Leaf Anatomy:", anatomy.get("leaf_type", "No data"), y)
-    y = add_text("Vascular Bundle:", anatomy.get("vascular_bundle", "No data"), y)
-    y = add_text("Stomatal Characteristics:", anatomy.get("stomata", "No data"), y)
-    y = add_text("Special Features:", anatomy.get("special", "No data"), y)
-
-    c.save()
-    buffer.seek(0)
-    return buffer
-
-    # Create PDF
-     pdf_buffer = generate_pdf(species, anatomy)
-
-# Download Button
-     st.download_button(
-        label="📄 Download Anatomy Report (PDF)",
-        data=pdf_buffer,
-        file_name=f"{species}_Anatomy_Report.pdf",
-        mime="application/pdf"
-)
+ 
 
 
     st.subheader("🌱 Transverse section of Leaf")
@@ -403,6 +359,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
