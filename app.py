@@ -343,7 +343,7 @@ if uploaded_file:
     y = add_text("Stomatal Characteristics:", anatomy.get("stomata", "No data"), y)
     y = add_text("Special Features:", anatomy.get("special", "No data"), y)
 
-     c.save()
+    c.save()
      buffer.seek(0)
      return buffer
 
@@ -403,6 +403,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
