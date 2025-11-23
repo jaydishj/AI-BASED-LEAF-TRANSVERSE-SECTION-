@@ -344,7 +344,7 @@ if uploaded_file:
     y = add_text("Special Features:", anatomy.get("special", "No data"), y)
 
     c.save()
-     buffer.seek(0)
+    buffer.seek(0)
      return buffer
 
     # Create PDF
@@ -403,6 +403,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
