@@ -6,7 +6,7 @@ import tensorflow as tf
 # -----------------------------
 # CONFIG
 # -----------------------------
-MODEL_PATH = "e:/GUIESS RECORD/leaf_modell_mobilenetv2_finetuned.h5"
+MODEL_PATH = "leaf_modell_mobilenetv2_finetuned.h5"
 IMG_SIZE = 160
 
 CLASS_NAMES = [
@@ -355,3 +355,4 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("e:/GUIESS RECORD/vacular bundles/vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
