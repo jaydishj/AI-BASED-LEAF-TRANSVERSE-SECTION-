@@ -234,7 +234,7 @@ def predict_species(model, img_pil):
 # -----------------------------
 # STREAMLIT UI
 # -----------------------------
-st.title("🌿 LeafX-Ray AI [AI-Assisted Digital Reconstruction of Leaf Anatomy Without Physical Cross-Sectioning]")
+st.title("🌿 Leaf X-Ray AI [AI-Assisted Digital Reconstruction of Leaf Anatomy Without Physical Cross-Sectioning]")
 st.markdown("""
 ### 🧪🔬 Traditional Cross-Section Preparation vs AI-Assisted Anatomy
 
@@ -359,6 +359,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
