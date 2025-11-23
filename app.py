@@ -44,7 +44,7 @@ anatomy_data =ANATOMY = {
         "stomata": (
             "Predominantly **Paracytic** stomata with two subsidiary cells parallel to guard cells; mainly abaxial."
         ),
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png",
+        "stomata_images": "paracytic.png",
         "special": "Resin ducts abundant; thick cuticle and sclerenchyma present",
         "Systematic Position": ("")
     },
@@ -65,7 +65,7 @@ anatomy_data =ANATOMY = {
         "stomata": (
             "Predominantly **Paracytic** stomata; two subsidiary cells parallel to guard cells; abaxial distribution."
         ),
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png",
+        "stomata_images": "paracytic.png",
         "special": "Compound leaflet structure; terminal leaflet thickened."
     },
 
@@ -83,7 +83,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Paracytic**, with parallel subsidiary cells, typical of Moraceae. They are generally confined to the abaxial surface to minimize water loss..",
         "special": "Abundant latex canals; stiff leathery leaf.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Hibiscus rosa-sinensis L": {
@@ -97,7 +97,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Anisocytic**, distinguished by three subsidiary cells surrounding the guard cells, one of which is smaller. This pattern is a diagnostic feature of the Hibiscus genus.",
         "special": "Mucilage cavities and stellate trichomes present.",
-        "stomata_imagee": "e:/GUIESS RECORD/Stomata types/Anisocytic stoamta.png"
+        "stomata_imagee": "Anisocytic stoamta.png"
     },
 
     "Ixora chinensis Lam": {
@@ -110,7 +110,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Paracytic**, a dominant character in Rubiaceae. They may appear slightly sunken, reducing transpiration.",
         "special": "Glossy leaves with xeromorphic features.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Macadamia tetraphylla L": {
@@ -123,7 +123,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Paracytic**, often sunken into small depressions that reduce water loss in dry conditions.",
         "special": "Strong xeric adaptation; lignified tissues.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Mangifera indica L": {
@@ -136,7 +136,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are predominantly **Anomocytic**, with guard cells surrounded by a random arrangement of epidermal cells without defined subsidiary cells.",
         "special": "Aromatic resin canals; tough midrib.",
-        "stomata_image": "e:/GUIESS RECORD/Stomata types/Anomyctic stomata.png"
+        "stomata_image": "Anomyctic stomata.png"
     },
 
     "Pandanus amaryllifolius Roxb": {
@@ -150,7 +150,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Paracytic**, frequently arranged parallel to the long axis of the leaf — a typical monocot condition.",
         "special": "Aromatic oils present; fibrous margins.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Pterocarpus santalinus L": {
@@ -163,7 +163,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "**Paracytic** stomata typical of Fabaceae.",
         "special": "Resinous secretory cells.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Sassafras albidum": {
@@ -176,7 +176,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Anomocytic**, with no distinct subsidiary cells, which is characteristic of Lauraceae.",
         "special": "Young leaves have fine trichomes.",
-        "stomata_image": "e:/GUIESS RECORD/Stomata types/Anomyctic stomata.png"
+        "stomata_image": "Anomyctic stomata.png"
     },
 
     "Simarouba glauca DC": {
@@ -189,7 +189,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata are **Paracytic**, similar to many members of Simaroubaceae.",
         "special": "Oil-rich secretory structures.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     },
 
     "Syzygium smithii (Poir.) Nied": {
@@ -202,7 +202,7 @@ anatomy_data =ANATOMY = {
         ),
         "stomata": "Stomata may be **paracytic or anomocytic**, depending on leaf maturity. The mixed stomatal pattern reflects ecological adaptability.",
         "special": "Aromatic leaves; abundant oil cavities.",
-        "stomata_images": "e:/GUIESS RECORD/Stomata types/paracytic.png"
+        "stomata_images": "paracytic.png"
     }
 }
 
@@ -355,5 +355,6 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("e:/GUIESS RECORD/vacular bundles/vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
