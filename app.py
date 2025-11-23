@@ -35,7 +35,7 @@ anatomy_data =ANATOMY = {
             "to intense coastal sunlight. Resin ducts occur in the mesophyll as elongated "
             "secretory canals that aid in defense."
         ),
-        "Calophyllum": "e:/GUIESS RECORD/T.S of Leaf/Dicot.jpg",
+        "Calophyllum": "Dicot.jpg",
 
         "vascular_bundle": (
             "A large **Collateral** midrib bundle with xylem on the adaxial side and phloem on the abaxial side. "
@@ -56,7 +56,7 @@ anatomy_data =ANATOMY = {
             "Resin ducts occur in the mesophyll,appearing as elongated cavities filled with viscous secretions that contribute to the plant’s defense."
             "The mesophyll is densely packed, indicating xeromorphic features suited for salt-spray environments."
         ),
-        "Dendrolobium": "e:/GUIESS RECORD/T.S of Leaf/Dendrobolium umbellatum.png.",
+        "Dendrolobium": "Dendrobolium umbellatum.png.",
 
         "vascular_bundle": (
             "Large **Collateral** bundle with xylem on upper side, phloem below. "
@@ -75,7 +75,7 @@ anatomy_data =ANATOMY = {
              "Well-differentiated into:Palisade parenchyma:  (sometimes 3) layers of elongated, cylindrical, tightly packed chlorenchyma cells rich in chloroplasts. The palisade layer is thicker on the adaxial side (typical sun/shade adaptation).Spongy parenchyma:  layers of loosely arranged, irregularly shaped cells with large intercellular spaces, facilitating gas exchange. Fewer chloroplasts than palisade tissue."
     
         ),
-        "Ficus": "e:/GUIESS RECORD/T.S of Leaf/Ficus.jpg",
+        "Ficus": "Ficus.jpg",
 
         "vascular_bundle": (
             "The midrib contains a **Collateral bundle** accompanied by latex ducts on both the adaxial and abaxial sides. Xylem elements are highly lignified, supporting efficient transport. Mechanical tissue is abundant, giving the leaf a leathery texture.. "
@@ -91,7 +91,7 @@ anatomy_data =ANATOMY = {
             "Epidermis Both adaxial and abaxial epidermis are single-layered.Adaxial epidermis: Cells larger, rectangular to polygonal, walls slightly wavy, covered by a thick, smooth cuticle.Abaxial epidermis: Cells smaller, anticlinal walls more wavy or sinuous. Stomata: Present only on the lower (abaxial) surface → hypostomatic. Stomata are ranunculaceous (anomocytic) – surrounded by 3–6 ordinary epidermal cells with no definite arrangement (typical of Malvaceae).Trichomes:Abundant stellate (star-shaped) hairs on the lower surface and along veins (especially in young leaves).Simple unicellular or multicellular unbranched hairs may also be present.Upper surface usually glabrous or sparingly hairy in mature leaves.Mucilage cells: Large mucilage-containing idioblasts scattered in both epidermises (characteristic of Malvaceae). Mesophyll Clearly differentiated into:Palisade parenchyma: 1–2 (rarely 3) layers of long, cylindrical, compactly arranged cells rich in chloroplasts (adaxial side).Spongy parenchyma: 4–6 layers of loosely arranged, lobed cells with large intercellular spaces; fewer chloroplasts.. "
             "Epidermis contains stellate hairs."
         ),
-        "Hibiscus": "e:/GUIESS RECORD/T.S of Leaf/Hibiscus .png",
+        "Hibiscus": "Hibiscus .png",
         "vascular_bundle": (
             "The bundles are **bicollateral**, with phloem located on both sides of the xylem — a signature trait of Malvaceae. Sclerenchymatous tissue is extensive around the midrib, providing rigidity."
         ),
@@ -104,7 +104,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             "Chinese Ixora, Rubiaceae) has a dorsiventral, hypostomatic leaf with a thick-cuticled adaxial epidermis devoid of stomata and an abaxial epidermis bearing typical paracytic (rubiaceous) stomata. The mesophyll consists of 1–3 palisade layers (sometimes with an adaxial hypodermis) and 4–7 spongy layers. Numerous raphide bundles in idioblasts are a hallmark of the family. The midrib contains a single arc-shaped collateral bundle. Trichomes are usually absent in mature leaves."
         ),
-        "ixora": "e:/GUIESS RECORD/T.S of Leaf/ixora .jpg",
+        "ixora": "ixora .jpg",
         "vascular_bundle": (
             "Vascular bundles are **Collateral**, with a narrow xylem strand and a relatively broad phloem region. The bundle sheath is distinct and often lignified. Minor veins form a fine reticulum characteristic of Rubiaceae."
         ),
@@ -117,7 +117,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             "(Rough-shelled Macadamia, Proteaceae) shows a thick, coriaceous, strongly xeromorphic, hypostomatic leaf with a very thick cuticle on both surfaces. A 1–3-layered adaxial hypodermis and 2–4 palisade layers dominate the compact mesophyll, while scattered branched sclereids give a gritty texture. Stomata are paracytic and sunken on the abaxial side. The midrib houses a large collateral bundle. Mature leaves are glabrous."
         ),
-        "Macadamia":"e:/GUIESS RECORD/T.S of Leaf/macademia.jpg",
+        "Macadamia":"macademia.jpg",
         "vascular_bundle": (
             "Bundles are **Collateral**, surrounded by tough fiber caps forming a protective sheath. The xylem is narrow but heavily lignified. The structure supports efficient water conservation."
         ),
@@ -130,7 +130,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             " (Mango, Anacardiaceae) produces glossy, coriaceous, hypostomatic leaves with a very thick adaxial cuticle (10–20 µm) and 1–2 layers of adaxial hypodermis in many cultivars. The mesophyll has 2–4 palisade layers and abundant schizogenous resin canals throughout, along with druses of calcium oxalate. Sunken paracytic stomata occur abaxially. The midrib exhibits a large bicollateral bundle with accessory bundles and conspicuous resin canals — classic Anacardiaceae features."
         ),
-        "Mangifera": "e:/GUIESS RECORD/T.S of Leaf/mangniferas.png",
+        "Mangifera": "mangniferas.png",
         "vascular_bundle": (
             "The vascular bundle is **Collateral**, with a broad zone of xylem and adjacent resin ducts. Sclerenchyma forms a strong cap around the bundle, giving the leaf notable stiffness."
         ),
@@ -143,7 +143,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             "Fragrant Pandan, Pandanaceae), being a monocot, has linear, pleated, isobilateral, amphistomatic leaves with heavily silicified epidermises and thick cuticle on both surfaces. Tetracytic stomata are arranged in rows, and the homogeneous chlorenchyma lacks palisade–spongy differentiation. Large longitudinal air lacunae with stellate diaphragms, silica stegmata, raphide idioblasts, and aromatic oil cells (containing 2-acetyl-1-pyrroline) are characteristic. Numerous parallel collateral bundles with double sheaths run through the blade."
         ),
-        "Pandanus": "e:/GUIESS RECORD/T.S of Leaf/pandanus.jpg",
+        "Pandanus": "pandanus.jpg",
 
         "vascular_bundle": (
             "Bundles are closed and **parallel** each with a bundle sheath of sclerenchyma cells. Xylem and phloem lie side by side without cambium. The fibrous margins of the leaf arise from mechanical tissues adjacent to the bundles."
@@ -157,7 +157,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             " (Red Sandalwood, Fabaceae) bears trifoliolate, dorsiventral, hypostomatic leaflets with paracytic stomata abaxially. The mesophyll comprises 2–3 palisade layers and 4–6 spongy layers. Prismatic crystals, druses, and tanniniferous cells (reddish-brown) are abundant. The midrib contains an arc-shaped collateral bundle. Mature leaflets are nearly glabrous."
         ),
-        "Pterocarpus": "e:/GUIESS RECORD/T.S of Leaf/pterocarpusjpg.jpg",
+        "Pterocarpus": "pterocarpusjpg.jpg",
         "vascular_bundle": (
             "Bundles are **Bicollateral**, having phloem both above and below the xylem. Thick sclerenchyma ribs occur along the midrib, supporting structural integrity."
         ),
@@ -170,7 +170,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             "(Sassafras, Lauraceae) has dorsiventral, hypostomatic leaves with paracytic stomata on the lower surface. The mesophyll shows 1–2 palisade layers and 4–7 spongy layers. Large spherical oil/mucilage idioblasts containing aromatic compounds (safrole, etc.) are scattered throughout — the most distinctive Lauraceae feature in this species. Calcium oxalate crystals are rare or absent."
         ),
-        "Sassafras": "e:/GUIESS RECORD/T.S of Leaf/sassafras.jpg",
+        "Sassafras": "sassafras.jpg",
         "vascular_bundle": (
             "The vascular strand is **Collateral**, with oil glands located near the phloem. The xylem is lignified and arranged in radial clusters."
         ),
@@ -183,7 +183,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             "(Paradise Tree, Simaroubaceae) exhibits dorsiventral, hypostomatic leaves with sunken paracytic stomata abaxially. The mesophyll has 2–4 palisade layers and contains schizogenous resin/oil canals plus abundant prismatic crystals and crystal sand. The midrib shows a large collateral bundle with sclerenchyma caps and numerous resin canals, giving a bitter taste when chewed."
         ),
-        "Simarouba": "e:/GUIESS RECORD/T.S of Leaf/simrouba.jpg",
+        "Simarouba": "simrouba.jpg",
         "vascular_bundle": (
             "Bundles are **Collateral**, with a relatively wide phloem zone. Mechanical tissues occur around the bundle, contributing to leaf rigidity."
         ),
@@ -196,7 +196,7 @@ anatomy_data =ANATOMY = {
         "leaf_type": (
             " (Lilly Pilly, Myrtaceae) produces glossy, xeromorphic, hypostomatic leaves with a very thick adaxial cuticle and a single-layered adaxial hypodermis. The mesophyll is compact, with 2–4 tall palisade layers and numerous large schizogenous oil glands appearing as translucent dots. Sunken paracytic stomata lie abaxially. The midrib has a crescent-shaped collateral bundle surrounded by a thick fibrous sheath."
         ),
-        "Syzygium": "e:/GUIESS RECORD/T.S of Leaf/syzgium.png",
+        "Syzygium": "syzgium.png",
         "vascular_bundle": (
             "Bundles are **collateral**, reinforced by fiber caps on both adaxial and abaxial sides. The xylem is moderately developed, while phloem is compact and efficient."
         ),
@@ -355,4 +355,5 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("e:/GUIESS RECORD/vacular bundles/vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
