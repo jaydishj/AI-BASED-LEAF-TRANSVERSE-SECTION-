@@ -343,15 +343,15 @@ if uploaded_file:
     y = add_text("Stomatal Characteristics:", anatomy.get("stomata", "No data"), y)
     y = add_text("Special Features:", anatomy.get("special", "No data"), y)
 
-    c.save()
-    buffer.seek(0)
-    return buffer
+     c.save()
+     buffer.seek(0)
+     return buffer
 
     # Create PDF
-    pdf_buffer = generate_pdf(species, anatomy)
+     pdf_buffer = generate_pdf(species, anatomy)
 
 # Download Button
-    st.download_button(
+     st.download_button(
         label="📄 Download Anatomy Report (PDF)",
         data=pdf_buffer,
         file_name=f"{species}_Anatomy_Report.pdf",
@@ -403,6 +403,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
