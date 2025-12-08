@@ -2,7 +2,73 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+from streamlit_lottie import st_lottie
+import json
 
+# Load animation
+def load_lottie(file):
+    with open(file, "r") as f:
+        return json.load(f)
+
+st.set_page_config(page_title="Insect ID Pro", page_icon="🐞", layout="wide")
+
+# Custom CSS
+st.markdown("""
+    <style>
+    .title {
+        font-size: 40px;
+        font-weight: 700;
+        color: #1A73E8;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+    .subtitle {
+        font-size: 18px;
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    .uploadbox {
+        border: 2px dashed #1A73E8;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f8fbff;
+    }
+    .result-box {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Header
+st.markdown("<div class='title'>🪲 Insect ID – AI Detection</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>World’s first genus–species level AI detector</div>", unsafe_allow_html=True)
+
+# Upload Section
+st.markdown("<div class='uploadbox'>Upload an insect image for prediction</div>", unsafe_allow_html=True)
+uploaded = st.file_uploader("", type=["jpg", "png", "jpeg"])
+
+# Prediction Section
+if uploaded:
+    st.image(uploaded, width=300)
+
+    with st.spinner("Analyzing image…"):
+        # your model prediction code here
+        output_class = "Thrips tabaci"
+        confidence = 97.5
+
+    st.markdown(f"""
+    <div class='result-box'>
+        <h3>Prediction Result</h3>
+        <p><b>Species:</b> {output_class}</p>
+        <p><b>Confidence:</b> {confidence}%</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------
 # CONFIG
@@ -359,6 +425,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
