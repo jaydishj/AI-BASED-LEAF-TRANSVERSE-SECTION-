@@ -36,7 +36,7 @@ anatomy_data =ANATOMY = {
             "to intense coastal sunlight. Resin ducts occur in the mesophyll as elongated "
             "secretory canals that aid in defense."
         ),
-        "Calophyllum": "Dicot.jpg",
+        "Calophyllum":"Dicot.jpg",
 
         "vascular_bundle": (
             "A large **Collateral** midrib bundle with xylem on the adaxial side and phloem on the abaxial side. "
@@ -45,7 +45,7 @@ anatomy_data =ANATOMY = {
         "stomata": (
             "Predominantly **Paracytic** stomata with two subsidiary cells parallel to guard cells; mainly abaxial."
         ),
-        "stomata_images": "paracytic.png",
+        "stomata_images":"paracytic.png",
         "special": "Resin ducts abundant; thick cuticle and sclerenchyma present",
         "Systematic Position": ("")
     },
@@ -57,7 +57,7 @@ anatomy_data =ANATOMY = {
             "Resin ducts occur in the mesophyll,appearing as elongated cavities filled with viscous secretions that contribute to the plant’s defense."
             "The mesophyll is densely packed, indicating xeromorphic features suited for salt-spray environments."
         ),
-        "Dendrolobium": "Dendrobolium umbellatum.png.",
+        "Dendrolobium":"Dendrobolium umbellatum.png.",
 
         "vascular_bundle": (
             "Large **Collateral** bundle with xylem on upper side, phloem below. "
@@ -66,7 +66,7 @@ anatomy_data =ANATOMY = {
         "stomata": (
             "Predominantly **Paracytic** stomata; two subsidiary cells parallel to guard cells; abaxial distribution."
         ),
-        "stomata_images": "paracytic.png",
+        "stomata_images":"paracytic.png",
         "special": "Compound leaflet structure; terminal leaflet thickened."
     },
 
@@ -76,7 +76,7 @@ anatomy_data =ANATOMY = {
              "Well-differentiated into:Palisade parenchyma:  (sometimes 3) layers of elongated, cylindrical, tightly packed chlorenchyma cells rich in chloroplasts. The palisade layer is thicker on the adaxial side (typical sun/shade adaptation).Spongy parenchyma:  layers of loosely arranged, irregularly shaped cells with large intercellular spaces, facilitating gas exchange. Fewer chloroplasts than palisade tissue."
     
         ),
-        "Ficus": "Ficus.jpg",
+        "Ficus":"Ficus.jpg",
 
         "vascular_bundle": (
             "The midrib contains a **Collateral bundle** accompanied by latex ducts on both the adaxial and abaxial sides. Xylem elements are highly lignified, supporting efficient transport. Mechanical tissue is abundant, giving the leaf a leathery texture.. "
@@ -312,8 +312,6 @@ if uploaded_file:
     st.write(f"### 🔍 Special Notes\n{anatomy.get('special')}")
 
     
- 
-
 
     st.subheader("🌱 Transverse section of Leaf")
 
@@ -324,7 +322,7 @@ if uploaded_file:
     if "Ficus" in anatomy:
         safe_show_image(anatomy["Ficus"], "T.S Of Leaf")
     if "Hibiscus" in anatomy:
-        safe_show_image(anatomy["Hibiscus"], "T.S Of Leaf")
+        safe_show_image(anatomy["Hibiscus.png"], "T.S Of Leaf")
     if "ixora" in anatomy:
         safe_show_image(anatomy["ixora"], "T.S Of Leaf")
     if "Macadamia" in anatomy:
@@ -359,6 +357,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
