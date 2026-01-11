@@ -6,15 +6,26 @@ import tensorflow as tf
 st.markdown("""
 <style>
 
-/* ================== App Background ================== */
+/* ================== Animated Background ================== */
 .stApp {
-    background: linear-gradient(145deg, #fff5f5, #fdecea);
-    color: #4a0d0d;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(33,150,243,0.08), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(30,136,229,0.10), transparent 45%),
+        linear-gradient(145deg, #f4f9ff, #e3f2fd);
+    background-size: 200% 200%;
+    animation: bgMove 18s ease infinite;
+    color: #0d2a4a;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* ================== Global Text ================== */
 body, p, span, div, label {
-    color: #4a0d0d !important;
+    color: #0d2a4a !important;
     font-family: "Inter", "Segoe UI", sans-serif;
 }
 
@@ -23,14 +34,20 @@ h1 {
     font-size: 46px !important;
     font-weight: 800;
     text-align: center;
-    color: #8e0000 !important;
+    color: #0b3c5d !important;
     letter-spacing: 0.6px;
+    animation: fadeDown 1.2s ease-out;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ================== Headings ================== */
 h2, h3, h4, h5, h6 {
     text-align: center;
-    color: #8e0000 !important;
+    color: #0b3c5d !important;
     font-weight: 700;
 }
 
@@ -38,62 +55,78 @@ h2, h3, h4, h5, h6 {
 .stButton > button {
     width: 100%;
     border-radius: 14px;
-    background: linear-gradient(135deg, #b71c1c, #ef5350);
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
     color: #ffffff !important;
     font-size: 18px;
     font-weight: 600;
     padding: 0.75em;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.35s ease;
 }
 
 .stButton > button:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 18px rgba(183,28,28,0.35);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(21,101,192,0.35);
 }
 
 /* ================== Upload Box ================== */
 [data-testid="stFileUploader"] {
-    border: 2px dashed #b71c1c;
+    border: 2px dashed #1565c0;
     border-radius: 18px;
     padding: 1.2em;
-    background: #fdecea;
+    background: rgba(227,242,253,0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    box-shadow: 0 0 18px rgba(33,150,243,0.25);
 }
 
 /* ================== File Uploader Text ================== */
 [data-testid="stFileUploader"] * {
-    color: #8e0000 !important;
+    color: #0b3c5d !important;
 }
 
 /* ================== Images ================== */
 img {
     border-radius: 18px;
     max-width: 100%;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    animation: fadeIn 1s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ================== Card Sections ================== */
 .card {
-    background: #ffffff;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 22px;
-    box-shadow: 0 10px 28px rgba(74,13,13,0.12);
-    color: #4a0d0d;
+    box-shadow: 0 12px 28px rgba(13,42,74,0.15);
+    color: #0d2a4a;
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ================== Footer ================== */
 .footer {
     text-align: center;
     font-size: 13px;
-    color: #b71c1c !important;
+    color: #1565c0 !important;
     margin-top: 30px;
     opacity: 0.85;
 }
 
-/* =================================================
-   📱 Mobile Responsive Design
-   ================================================= */
+/* ================== Mobile Responsive ================== */
 @media (max-width: 768px) {
 
     h1 { font-size: 34px !important; }
@@ -109,10 +142,6 @@ img {
     .card {
         padding: 16px;
         border-radius: 16px;
-    }
-
-    .footer {
-        font-size: 12px;
     }
 }
 
@@ -474,6 +503,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
