@@ -170,6 +170,11 @@ CLASS_NAMES = [
     "Simarouba glauca DC",
     "Syzygium smithii (Poir.) Nied"
 ]
+bicollateral_classes = [
+    "Pterocarpus santalinus L.",
+    "Hibiscus rosa-sinensis L."
+]
+
 
 # -----------------------------
 # ANATOMY DATA
@@ -528,6 +533,7 @@ if uploaded_file:
 
 
    
+
 
 
 
