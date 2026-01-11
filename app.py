@@ -503,7 +503,7 @@ if uploaded_file:
         st.subheader("Vascular Bundle Type")
 
     if predicted_class in bicollateral_classes:
-     st.image(
+      st.image(
         "bicollateral.jpg",
         caption="Bicollateral Vascular Bundle",
         use_container_width=True
@@ -528,6 +528,7 @@ if uploaded_file:
 
 
    
+
 
 
 
