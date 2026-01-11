@@ -513,7 +513,7 @@ if uploaded_file:
         "(phloem on both sides of xylem)."
     )
     else:
-    st.image(
+     st.image(
         "collateral.png",
         caption="Collateral Vascular Bundle",
         use_container_width=True
@@ -528,6 +528,7 @@ if uploaded_file:
 
 
    
+
 
 
 
