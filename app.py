@@ -171,10 +171,12 @@ CLASS_NAMES = [
     "Syzygium smithii (Poir.) Nied"
 ]
 
-bicollateral_classes_= [
-    "Pterocarpus santalinus L.",
-    "Hibiscus rosa-sinensis L."
+# Make sure this matches CLASS_NAMES exactly
+bicollateral_classes = [
+    "Pterocarpus santalinus L",
+    "Hibiscus rosa-sinensis L"
 ]
+
 # -----------------------------
 # ANATOMY DATA
 # -----------------------------
@@ -532,6 +534,7 @@ if uploaded_file:
 
 
    
+
 
 
 
