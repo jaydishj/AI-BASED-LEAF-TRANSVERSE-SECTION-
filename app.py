@@ -508,7 +508,7 @@ if uploaded_file:
         caption="Bicollateral Vascular Bundle",
         use_container_width=True
     )
-     st.info(
+      st.info(
         "This species shows a **Bicollateral vascular bundle** "
         "(phloem on both sides of xylem)."
     )
@@ -528,6 +528,7 @@ if uploaded_file:
 
 
    
+
 
 
 
