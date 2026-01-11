@@ -3,6 +3,122 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 
+st.markdown("""
+<style>
+
+/* ================== App Background ================== */
+.stApp {
+    background: linear-gradient(145deg, #f5f9ff, #e3f2fd);
+    color: #0d2a4a;
+}
+
+/* ================== Global Text ================== */
+body, p, span, div, label {
+    color: #0d2a4a !important;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ================== Main Title ================== */
+h1 {
+    font-size: 46px !important;
+    font-weight: 800;
+    text-align: center;
+    color: #0b3c5d !important;
+    letter-spacing: 0.6px;
+}
+
+/* ================== Headings ================== */
+h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #0b3c5d !important;
+    font-weight: 700;
+}
+
+/* ================== Buttons ================== */
+.stButton > button {
+    width: 100%;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.75em;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(21,101,192,0.35);
+}
+
+/* ================== Upload Box ================== */
+[data-testid="stFileUploader"] {
+    border: 2px dashed #1565c0;
+    border-radius: 18px;
+    padding: 1.2em;
+    background: #e3f2fd;
+}
+
+/* ================== File Uploader Text ================== */
+[data-testid="stFileUploader"] * {
+    color: #0b3c5d !important;
+}
+
+/* ================== Images ================== */
+img {
+    border-radius: 18px;
+    max-width: 100%;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* ================== Card Sections ================== */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 28px rgba(13,42,74,0.12);
+    color: #0d2a4a;
+}
+
+/* ================== Footer ================== */
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #1565c0 !important;
+    margin-top: 30px;
+    opacity: 0.85;
+}
+
+/* =================================================
+   📱 Mobile Responsive Design
+   ================================================= */
+@media (max-width: 768px) {
+
+    h1 { font-size: 34px !important; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+
+    .stButton > button {
+        font-size: 16px;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 
 # -----------------------------
 # CONFIG
@@ -357,6 +473,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
