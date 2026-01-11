@@ -500,24 +500,35 @@ if uploaded_file:
     if "stomata_imagee" in anatomy:
         st.image(anatomy["stomata_imagee"], "Anisocytic Stomatal Type",width=200)
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
+        st.subheader("Vascular Bundle Type")
 
-
-    st.subheader("Vascular Bundle Type")
-
-    if predicted_class in bicollateral_classes:
-      st.image(
+if predicted_class in bicollateral_classes:
+    st.image(
         "bicollateral.jpg",
         caption="Bicollateral Vascular Bundle",
         use_container_width=True
     )
-    st.info("This species shows a **Bicollateral vascular bundle** (phloem on both sides of xylem).")
- else:
-      st.image(
+    st.info(
+        "This species shows a **Bicollateral vascular bundle** "
+        "(phloem on both sides of xylem)."
+    )
+else:
+    st.image(
         "collateral.png",
         caption="Collateral Vascular Bundle",
         use_container_width=True
     )
-    st.info("This species shows a **Collateral vascular bundle** (xylem inside, phloem outside).")
+    st.info(
+        "This species shows a **Collateral vascular bundle** "
+        "(xylem inside, phloem outside)."
+    )
+
+
+
+
+
+   
+
 
 
 
