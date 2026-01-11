@@ -512,7 +512,7 @@ if uploaded_file:
         "This species shows a **Bicollateral vascular bundle** "
         "(phloem on both sides of xylem)."
     )
-   else:
+    else:
     st.image(
         "collateral.png",
         caption="Collateral Vascular Bundle",
@@ -528,6 +528,7 @@ if uploaded_file:
 
 
    
+
 
 
 
