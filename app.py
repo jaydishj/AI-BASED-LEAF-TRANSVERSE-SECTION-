@@ -474,7 +474,7 @@ if uploaded_file:
     if "Ficus" in anatomy:
         safe_show_image(anatomy["Ficus"], "T.S Of Leaf")
     if "Hibiscus" in anatomy:
-        safe_show_image(anatomy["Hibiscus.png"], "T.S Of Leaf")
+        safe_show_image(anatomy["Hibiscus"], "T.S Of Leaf")
     if "ixora" in anatomy:
         safe_show_image(anatomy["ixora"], "T.S Of Leaf")
     if "Macadamia" in anatomy:
@@ -534,6 +534,7 @@ if uploaded_file:
 
 
    
+
 
 
 
