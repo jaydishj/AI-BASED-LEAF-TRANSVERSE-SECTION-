@@ -508,7 +508,7 @@ if uploaded_file:
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
         st.subheader("Vascular Bundle Type")
 
-    if predicted_class in bicollateral_classes:
+    if predict_species in bicollateral_classes:
       st.image(
         "bicollateral.jpg",
         caption="Bicollateral Vascular Bundle",
@@ -534,6 +534,7 @@ if uploaded_file:
 
 
    
+
 
 
 
