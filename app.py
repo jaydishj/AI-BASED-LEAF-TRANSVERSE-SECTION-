@@ -8,13 +8,13 @@ st.markdown("""
 
 /* ================== App Background ================== */
 .stApp {
-    background: linear-gradient(145deg, #f5f9ff, #e3f2fd);
-    color: #0d2a4a;
+    background: linear-gradient(145deg, #fff5f5, #fdecea);
+    color: #4a0d0d;
 }
 
 /* ================== Global Text ================== */
 body, p, span, div, label {
-    color: #0d2a4a !important;
+    color: #4a0d0d !important;
     font-family: "Inter", "Segoe UI", sans-serif;
 }
 
@@ -23,14 +23,14 @@ h1 {
     font-size: 46px !important;
     font-weight: 800;
     text-align: center;
-    color: #0b3c5d !important;
+    color: #8e0000 !important;
     letter-spacing: 0.6px;
 }
 
 /* ================== Headings ================== */
 h2, h3, h4, h5, h6 {
     text-align: center;
-    color: #0b3c5d !important;
+    color: #8e0000 !important;
     font-weight: 700;
 }
 
@@ -38,7 +38,7 @@ h2, h3, h4, h5, h6 {
 .stButton > button {
     width: 100%;
     border-radius: 14px;
-    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    background: linear-gradient(135deg, #b71c1c, #ef5350);
     color: #ffffff !important;
     font-size: 18px;
     font-weight: 600;
@@ -49,20 +49,20 @@ h2, h3, h4, h5, h6 {
 
 .stButton > button:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 18px rgba(21,101,192,0.35);
+    box-shadow: 0 6px 18px rgba(183,28,28,0.35);
 }
 
 /* ================== Upload Box ================== */
 [data-testid="stFileUploader"] {
-    border: 2px dashed #1565c0;
+    border: 2px dashed #b71c1c;
     border-radius: 18px;
     padding: 1.2em;
-    background: #e3f2fd;
+    background: #fdecea;
 }
 
 /* ================== File Uploader Text ================== */
 [data-testid="stFileUploader"] * {
-    color: #0b3c5d !important;
+    color: #8e0000 !important;
 }
 
 /* ================== Images ================== */
@@ -78,15 +78,15 @@ img {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 22px;
-    box-shadow: 0 10px 28px rgba(13,42,74,0.12);
-    color: #0d2a4a;
+    box-shadow: 0 10px 28px rgba(74,13,13,0.12);
+    color: #4a0d0d;
 }
 
 /* ================== Footer ================== */
 .footer {
     text-align: center;
     font-size: 13px;
-    color: #1565c0 !important;
+    color: #b71c1c !important;
     margin-top: 30px;
     opacity: 0.85;
 }
@@ -118,6 +118,7 @@ img {
 
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # -----------------------------
@@ -473,6 +474,7 @@ if uploaded_file:
 
     st.subheader("🌱 Vascular  Bundle")
     st.image("vascular bundle.jpg", caption="Types of Vascular bundle", use_container_width=True)
+
 
 
 
