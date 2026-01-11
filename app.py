@@ -511,13 +511,14 @@ if uploaded_file:
         use_container_width=True
     )
     st.info("This species shows a **Bicollateral vascular bundle** (phloem on both sides of xylem).")
-    else:
+ else:
       st.image(
         "collateral.png",
         caption="Collateral Vascular Bundle",
         use_container_width=True
     )
     st.info("This species shows a **Collateral vascular bundle** (xylem inside, phloem outside).")
+
 
 
 
