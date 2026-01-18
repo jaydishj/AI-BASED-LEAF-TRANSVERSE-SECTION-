@@ -316,7 +316,7 @@ anatomy_data = {
         ),
         "stomata": "**Anomyctic** stomata typical of Fabaceae.",
         "special": "Resinous secretory cells.",
-        "stomata_image": "anomyctic stomata.png"
+        "stomata_image":"Anomyctic stomata.png"
     },
 
     "Sassafras albidum": {
@@ -530,6 +530,7 @@ if uploaded_file:
 
 
    
+
 
 
 
