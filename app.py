@@ -509,31 +509,19 @@ if uploaded_file:
         st.subheader("Vascular Bundle Type")
 
     if predict_species in bicollateral_classes:
-      st.image(
-        "bicollateral.jpg",
-        caption="Bicollateral Vascular Bundle",
-        use_container_width=True
-    )
-      st.info(
-        "This species shows a **Bicollateral vascular bundle** "
-        "(phloem on both sides of xylem)."
-    )
+        st.image("bicollateral.jpg", caption="Bicollateral Vascular Bundle", use_container_width=True)
+        st.info("This species shows a **Bicollateral vascular bundle** (phloem on both sides of xylem).")
     else:
-     st.image(
-        "collateral.png",
-        caption="Collateral Vascular Bundle",
-        use_container_width=True
-    )
-    st.info(
-        "This species shows a **Collateral vascular bundle** "
-        "(xylem inside, phloem outside)."
-    )
+        st.image("collateral.png", caption="Collateral Vascular Bundle", use_container_width=True)
+        st.info("This species shows a **Collateral vascular bundle** (xylem inside, phloem outside).")
+      
 
 
 
 
 
    
+
 
 
 
