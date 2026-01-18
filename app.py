@@ -314,9 +314,9 @@ anatomy_data = {
         "vascular_bundle": (
             "Bundles are **Bicollateral**, having phloem both above and below the xylem. Thick sclerenchyma ribs occur along the midrib, supporting structural integrity."
         ),
-        "stomata": "**Paracytic** stomata typical of Fabaceae.",
+        "stomata": "**Anomyctic** stomata typical of Fabaceae.",
         "special": "Resinous secretory cells.",
-        "stomata_images": "anomyctic stomata.png"
+        "stomata_image": "anomyctic stomata.png"
     },
 
     "Sassafras albidum": {
@@ -530,6 +530,7 @@ if uploaded_file:
 
 
    
+
 
 
 
