@@ -508,13 +508,21 @@ if uploaded_file:
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
 
     st.subheader("🌿🔍 Vascular Bundle Photograph")
+    
+    if species in bicollateral_classes:
+    st.image("Bicollateral.jpg", caption="Bicollateral Vascular Bundle", use_container_width=True)
+    st.info("This species shows a **Bicollateral vascular bundle** (phloem on both sides of xylem).")
 
-    if predict_species in bicollateral_classes:
-        st.image("Bicollateral.jpg", caption="Bicollateral Vascular Bundle", use_container_width=True)
-        st.info("This species shows a **Bicollateral vascular bundle** (phloem on both sides of xylem).")
+    
     else:
-        st.image("collateral.png", caption="Collateral Vascular Bundle", use_container_width=True)
-        st.info("This species shows a **Collateral vascular bundle** (xylem inside, phloem outside).")
+    st.image("collateral.png", caption="Collateral Vascular Bundle", use_container_width=True)
+    st.info("This species shows a **Collateral vascular bundle** (xylem inside, phloem outside).")
+
+
+
+    
+
+    
       
 
 
@@ -522,6 +530,7 @@ if uploaded_file:
 
 
    
+
 
 
 
