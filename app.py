@@ -506,7 +506,8 @@ if uploaded_file:
     if "stomata_imagee" in anatomy:
         st.image(anatomy["stomata_imagee"], "Anisocytic Stomatal Type",width=200)
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
-        st.subheader("Vascular Bundle Type")
+
+    st.subheader("🌿🔍 Vascular Bundle Photograph")
 
     if predict_species in bicollateral_classes:
         st.image("Bicollateral.jpg", caption="Bicollateral Vascular Bundle", use_container_width=True)
@@ -521,6 +522,7 @@ if uploaded_file:
 
 
    
+
 
 
 
