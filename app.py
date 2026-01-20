@@ -496,15 +496,15 @@ if uploaded_file:
     st.subheader("🌿🔍 Stomata Photograph")
 
     if "stomata_images" in anatomy:
-        st.image(anatomy["stomata_images"], "paracytic Stomatal Type",width=200)
+        st.image(anatomy["stomata_images"], "paracytic Stomatal Type",use_container_width=True)
         st.markdown("### 🌿🔍 **Paracytic Stomatal Type**")
 
     if "stomata_image" in anatomy:
-        st.image(anatomy["stomata_image"], "Anomyctic Stomatal Type",width=200)
+        st.image(anatomy["stomata_image"], "Anomyctic Stomatal Type",use_container_width=True)
         st.markdown("### 🌿🔍 **Anomyctic Stomatal Type**")
 
     if "stomata_imagee" in anatomy:
-        st.image(anatomy["stomata_imagee"], "Anisocytic Stomatal Type",width=200)
+        st.image(anatomy["stomata_imagee"], "Anisocytic Stomatal Type",use_container_width=True)
         st.markdown("### 🌿🔍 **Anisocytic Stomatal Type**")
 
     st.subheader("🌿🔍 Vascular Bundle Photograph")
@@ -530,6 +530,7 @@ if uploaded_file:
 
 
    
+
 
 
 
