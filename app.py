@@ -245,7 +245,7 @@ anatomy_data = {
             "Epidermis Both adaxial and abaxial epidermis are single-layered.Adaxial epidermis: Cells larger, rectangular to polygonal, walls slightly wavy, covered by a thick, smooth cuticle.Abaxial epidermis: Cells smaller, anticlinal walls more wavy or sinuous. Stomata: Present only on the lower (abaxial) surface → hypostomatic. Stomata are ranunculaceous (anomocytic) – surrounded by 3–6 ordinary epidermal cells with no definite arrangement (typical of Malvaceae).Trichomes:Abundant stellate (star-shaped) hairs on the lower surface and along veins (especially in young leaves).Simple unicellular or multicellular unbranched hairs may also be present.Upper surface usually glabrous or sparingly hairy in mature leaves.Mucilage cells: Large mucilage-containing idioblasts scattered in both epidermises (characteristic of Malvaceae). Mesophyll Clearly differentiated into:Palisade parenchyma: 1–2 (rarely 3) layers of long, cylindrical, compactly arranged cells rich in chloroplasts (adaxial side).Spongy parenchyma: 4–6 layers of loosely arranged, lobed cells with large intercellular spaces; fewer chloroplasts.. "
             "Epidermis contains stellate hairs."
         ),
-        "Hibiscus": "Hibiscus .png",
+        "Hibiscus": "Hibiscus.png",
         "vascular_bundle": (
             "The bundles are **bicollateral**, with phloem located on both sides of the xylem — a signature trait of Malvaceae. Sclerenchymatous tissue is extensive around the midrib, providing rigidity."
         ),
@@ -258,7 +258,7 @@ anatomy_data = {
         "leaf_type": (
             "Chinese Ixora, Rubiaceae) has a dorsiventral, hypostomatic leaf with a thick-cuticled adaxial epidermis devoid of stomata and an abaxial epidermis bearing typical paracytic (rubiaceous) stomata. The mesophyll consists of 1–3 palisade layers (sometimes with an adaxial hypodermis) and 4–7 spongy layers. Numerous raphide bundles in idioblasts are a hallmark of the family. The midrib contains a single arc-shaped collateral bundle. Trichomes are usually absent in mature leaves."
         ),
-        "ixora": "ixora .jpg",
+        "ixora": "ixora.jpg",
         "vascular_bundle": (
             "Vascular bundles are **Collateral**, with a narrow xylem strand and a relatively broad phloem region. The bundle sheath is distinct and often lignified. Minor veins form a fine reticulum characteristic of Rubiaceae."
         ),
@@ -284,7 +284,7 @@ anatomy_data = {
         "leaf_type": (
             " (Mango, Anacardiaceae) produces glossy, coriaceous, hypostomatic leaves with a very thick adaxial cuticle (10–20 µm) and 1–2 layers of adaxial hypodermis in many cultivars. The mesophyll has 2–4 palisade layers and abundant schizogenous resin canals throughout, along with druses of calcium oxalate. Sunken paracytic stomata occur abaxially. The midrib exhibits a large bicollateral bundle with accessory bundles and conspicuous resin canals — classic Anacardiaceae features."
         ),
-        "Mangifera": "mangniferas.png",
+        "Mangifera":"mangniferas.png",
         "vascular_bundle": (
             "The vascular bundle is **Collateral**, with a broad zone of xylem and adjacent resin ducts. Sclerenchyma forms a strong cap around the bundle, giving the leaf notable stiffness."
         ),
@@ -533,6 +533,7 @@ if uploaded_file:
 
 
    
+
 
 
 
