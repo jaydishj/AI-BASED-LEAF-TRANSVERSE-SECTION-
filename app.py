@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
+import time
 import tensorflow as tf
 
 st.markdown("""
@@ -444,6 +445,8 @@ uploaded_file = st.file_uploader("Upload Leaf Image", type=["jpg", "jpeg", "png"
 if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Leaf", use_container_width=True)
+    with st.spinner("🔍 Analyzing image... Please wait"):
+        time.sleep(5)  # ⏳ show spinner for 5 seconds
 
     model = tf.keras.models.load_model(MODEL_PATH)
 
@@ -530,6 +533,7 @@ if uploaded_file:
 
 
    
+
 
 
 
