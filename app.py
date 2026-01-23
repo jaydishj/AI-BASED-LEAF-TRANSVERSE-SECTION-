@@ -210,7 +210,7 @@ anatomy_data = {
             "Resin ducts occur in the mesophyll,appearing as elongated cavities filled with viscous secretions that contribute to the plant’s defense."
             "The mesophyll is densely packed, indicating xeromorphic features suited for salt-spray environments."
         ),
-        "Dendrolobium":"Dendrolobium umbellatum.png.",
+        "Dendrolobium":"Dendrolobium umbellatum.png",
 
         "vascular_bundle": (
             "Large **Collateral** bundle with xylem on upper side, phloem below. "
@@ -445,7 +445,7 @@ uploaded_file = st.file_uploader("Upload Leaf Image", type=["jpg", "jpeg", "png"
 if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Leaf", use_container_width=True)
-    with st.spinner("🔍 Analyzing image to generate AI-based anatomical feature insights... Please wait. "):
+    with st.spinner("🔍 Analyzing image to generate AI-based 3D anatomical features insights... Please wait. "):
         time.sleep(5)  # ⏳ show spinner for 5 seconds
 
     model = tf.keras.models.load_model(MODEL_PATH)
@@ -460,7 +460,7 @@ if uploaded_file:
     anatomy = anatomy_data.get(species, {})
    
 
-    st.subheader("📘 Anatomical Features")
+    st.subheader("📘 AI-based 3D anatomical features of the leaf")
     st.write(f"### 🌿 Leaf Anatomy\n{anatomy.get('leaf_type')}")
     st.write(f"### 🌱 Vascular Bundle\n{anatomy.get('vascular_bundle')}")
     st.write(f"### 🌬️ Stomatal Type\n{anatomy.get('stomata')}")
@@ -533,6 +533,7 @@ if uploaded_file:
 
 
    
+
 
 
 
