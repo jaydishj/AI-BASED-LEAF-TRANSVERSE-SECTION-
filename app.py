@@ -445,7 +445,7 @@ uploaded_file = st.file_uploader("Upload Leaf Image", type=["jpg", "jpeg", "png"
 if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Leaf", use_container_width=True)
-    with st.spinner("🔍 Analyzing image... Please wait"):
+    with st.spinner("🔍 Analyzing image and Generating Ai based Anotomical Features... Please wait "):
         time.sleep(5)  # ⏳ show spinner for 5 seconds
 
     model = tf.keras.models.load_model(MODEL_PATH)
@@ -533,6 +533,7 @@ if uploaded_file:
 
 
    
+
 
 
 
