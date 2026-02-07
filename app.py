@@ -473,7 +473,7 @@ elif input_method == "Use Camera":
 if image is not None:
     st.image(image, caption="Leaf Image", use_container_width=True)
     with st.spinner("🔍 Analyzing image to generate AI-based anatomical features insights... Please wait. "):
-        time.sleep(5)  # ⏳ show spinner for 5 seconds
+        time.sleep(6)  # ⏳ show spinner for 5 seconds
 
     model = tf.keras.models.load_model(MODEL_PATH)
 
@@ -560,6 +560,7 @@ if image is not None:
 
 
    
+
 
 
 
