@@ -440,11 +440,38 @@ st.write("""
 
 st.write("Upload a leaf image to identify the species anatomical features.")
 
-uploaded_file = st.file_uploader("Upload Leaf Image", type=["jpg", "jpeg", "png"])
+# Select input method
+input_method = st.radio(
+    "Select Image Source",
+    ["Upload Image", "Use Camera"],
+    horizontal=True
+)
 
-if uploaded_file:
-    image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Leaf", use_container_width=True)
+image = None  # initialize image variable
+
+# Upload image option
+if input_method == "Upload Image":
+    uploaded_file = st.file_uploader(
+        "",
+        type=["jpg", "jpeg", "png"],
+        label_visibility="collapsed",
+        help="Supported: JPG, PNG | Max size: 10MB"
+    )
+    if uploaded_file is not None:
+        image = Image.open(uploaded_file)
+
+# Camera option
+elif input_method == "Use Camera":
+    camera_image = st.camera_input(
+        "",
+        label_visibility="collapsed"
+    )
+    if camera_image is not None:
+        image = Image.open(camera_image)
+
+# Display image
+if image is not None:
+    st.image(image, caption="Leaf Image", use_container_width=True)
     with st.spinner("🔍 Analyzing image to generate AI-based anatomical features insights... Please wait. "):
         time.sleep(5)  # ⏳ show spinner for 5 seconds
 
@@ -533,6 +560,7 @@ if uploaded_file:
 
 
    
+
 
 
 
