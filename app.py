@@ -75,7 +75,7 @@ h2, h3, h4, h5, h6 {
     border: 2px dashed #1565c0;
     border-radius: 18px;
     padding: 1.2em;
-    background: rgba(227,242,253,0.8);
+    background: #fafafa;
     transition: box-shadow 0.3s ease;
 }
 
@@ -560,6 +560,7 @@ if image is not None:
 
 
    
+
 
 
 
