@@ -72,15 +72,25 @@ h2, h3, h4, h5, h6 {
 
 /* ================== Upload Box ================== */
 [data-testid="stFileUploader"] {
-    border: 2px dashed #1565c0;
-    border-radius: 18px;
-    padding: 1.2em;
-    background: #fafafa;
-    transition: box-shadow 0.3s ease;
+    border: 2px dashed #1565c0 !important;
+    border-radius: 18px !important;
+    padding: 1.2em !important;
+
+    background-color: #ffffff !important;   /* FORCE white */
+    background-image: none !important;
+    opacity: 1 !important;
+
+    box-shadow: none !important;
 }
 
-[data-testid="stFileUploader"]:hover {
-    box-shadow: 0 0 18px rgba(33,150,243,0.25);
+/* Inner container fix (mobile browsers) */
+[data-testid="stFileUploader"] section {
+    background-color: #ffffff !important;
+}
+
+/* Drag area fix */
+[data-testid="stFileUploader"] div {
+    background-color: #ffffff !important;
 }
 
 /* ================== File Uploader Text ================== */
@@ -560,6 +570,7 @@ if image is not None:
 
 
    
+
 
 
 
