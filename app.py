@@ -73,22 +73,54 @@ h2, h3, h4, h5, h6 {
 /* ================== Upload Box ================== */
 
 
-/* Whole camera container */
+/* ============ FILE UPLOADER (UPLOAD IMAGE) ============ */
+
+[data-testid="stFileUploader"] {
+    background-color: #ffffff !important;
+    border: 2px dashed #1565c0 !important;
+    border-radius: 18px !important;
+    padding: 1.2em !important;
+}
+
+/* Inner containers */
+[data-testid="stFileUploader"] section,
+[data-testid="stFileUploader"] div {
+    background-color: #ffffff !important;
+}
+
+/* Upload text */
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] label {
+    color: #1565c0 !important;
+    font-weight: 500 !important;
+}
+
+/* Upload button */
+[data-testid="stFileUploader"] button {
+    background-color: #1565c0 !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+/* ============ CAMERA INPUT ============ */
+
 [data-testid="stCameraInput"] {
     background-color: #ffffff !important;
     border-radius: 18px !important;
 }
 
-/* Camera preview area */
 [data-testid="stCameraInput"] video,
 [data-testid="stCameraInput"] img {
     border-radius: 14px !important;
 }
 
-/* TAKE PHOTO button */
+/* Take Photo button */
 [data-testid="stCameraInput"] button {
-    background-color: #1565c0 !important;  /* Blue button */
-    color: #ffffff !important;             /* WHITE TEXT */
+    background-color: #1565c0 !important;
+    color: #ffffff !important;
     font-size: 16px !important;
     font-weight: 700 !important;
     border-radius: 16px !important;
@@ -96,21 +128,22 @@ h2, h3, h4, h5, h6 {
     border: none !important;
 }
 
-/* Force text inside button */
+/* Force text inside */
 [data-testid="stCameraInput"] button span {
     color: #ffffff !important;
 }
 
-/* Mobile dark-mode override */
+/* ============ MOBILE HARD OVERRIDE ============ */
 @media (max-width: 768px) {
-    [data-testid="stCameraInput"] button,
-    [data-testid="stCameraInput"] button span {
-        background-color: #1565c0 !important;
-        color: #ffffff !important;
+    [data-testid="stFileUploader"],
+    [data-testid="stFileUploader"] section,
+    [data-testid="stFileUploader"] div,
+    [data-testid="stCameraInput"],
+    [data-testid="stCameraInput"] button {
+        background-color: #ffffff !important;
     }
 }
 
-}
 
 /* ================== File Uploader Text ================== */
 [data-testid="stFileUploader"] * {
@@ -589,6 +622,7 @@ if image is not None:
 
 
    
+
 
 
 
