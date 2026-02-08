@@ -72,25 +72,48 @@ h2, h3, h4, h5, h6 {
 
 /* ================== Upload Box ================== */
 [data-testid="stFileUploader"] {
+    background-color: #ffffff !important;
     border: 2px dashed #1565c0 !important;
     border-radius: 18px !important;
     padding: 1.2em !important;
-
-    background-color: #ffffff !important;   /* FORCE white */
-    background-image: none !important;
-    opacity: 1 !important;
-
-    box-shadow: none !important;
 }
 
-/* Inner container fix (mobile browsers) */
-[data-testid="stFileUploader"] section {
-    background-color: #ffffff !important;
-}
-
-/* Drag area fix */
+/* Inner containers */
+[data-testid="stFileUploader"] section,
 [data-testid="stFileUploader"] div {
     background-color: #ffffff !important;
+}
+
+/* Camera / Browse button */
+[data-testid="stFileUploader"] button {
+    background-color: #1565c0 !important;  /* dark blue */
+    color: #ffffff !important;             /* WHITE text */
+    border: none !important;
+    border-radius: 14px !important;
+    font-weight: 600 !important;
+    padding: 0.6em 1.2em !important;
+}
+
+/* "Take Photo" text */
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] label {
+    color: #ffffff !important;   /* FORCE WHITE */
+}
+
+/* Mobile dark-mode override */
+[data-testid="stFileUploader"] * {
+    opacity: 1 !important;
+}
+
+/* Extra mobile safety */
+@media (max-width: 768px) {
+    [data-testid="stFileUploader"] button,
+    [data-testid="stFileUploader"] span,
+    [data-testid="stFileUploader"] p,
+    [data-testid="stFileUploader"] label {
+        color: #ffffff !important;
+    }
 }
 
 /* ================== File Uploader Text ================== */
@@ -570,6 +593,7 @@ if image is not None:
 
 
    
+
 
 
 
