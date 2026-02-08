@@ -138,9 +138,10 @@ h2, h3, h4, h5, h6 {
     [data-testid="stFileUploader"],
     [data-testid="stFileUploader"] section,
     [data-testid="stFileUploader"] div,
-    [data-testid="stCameraInput"],
-    [data-testid="stCameraInput"] button {
-        background-color: #ffffff !important;
+    [data-testid="stCameraInput"] button,
+    [data-testid="stCameraInput"] button span {
+        background-color: #1565c0 !important;
+        color: #ffffff !important;
     }
 }
 
@@ -622,6 +623,7 @@ if image is not None:
 
 
    
+
 
 
 
