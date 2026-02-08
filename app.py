@@ -534,7 +534,7 @@ if image is not None:
         safe_show_image(anatomy["Syzygium"], "T.S Of Leaf")
 
     
-    st.subheader("🌿🔍 Stomata Type")
+    st.subheader("🌿🔍 Stomatal Type")
 
     if "stomata_images" in anatomy:
         st.image(anatomy["stomata_images"], "paracytic Stomatal Type",use_container_width=True)
@@ -571,6 +571,7 @@ if image is not None:
 
 
    
+
 
 
 
