@@ -71,27 +71,45 @@ h2, h3, h4, h5, h6 {
 }
 
 /* ================== Upload Box ================== */
-/* ================== Upload Box (Desktop + Mobile FIX) ================== */
-[data-testid="stFileUploader"] {
-    border: 2px dashed #1565c0 !important;
+
+
+/* Whole camera container */
+[data-testid="stCameraInput"] {
+    background-color: #ffffff !important;
     border-radius: 18px !important;
-    padding: 1.2em !important;
-
-    background-color: #ffffff !important;   /* FORCE white */
-    background-image: none !important;
-    opacity: 1 !important;
-
-    box-shadow: none !important;
 }
 
-/* Inner container fix (mobile browsers) */
-[data-testid="stFileUploader"] section {
-    background-color: #ffffff !important;
+/* Camera preview area */
+[data-testid="stCameraInput"] video,
+[data-testid="stCameraInput"] img {
+    border-radius: 14px !important;
 }
 
-/* Drag area fix */
-[data-testid="stFileUploader"] div {
-    background-color: #ffffff !important;
+/* TAKE PHOTO button */
+[data-testid="stCameraInput"] button {
+    background-color: #1565c0 !important;  /* Blue button */
+    color: #ffffff !important;             /* WHITE TEXT */
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-radius: 16px !important;
+    padding: 0.8em 1.5em !important;
+    border: none !important;
+}
+
+/* Force text inside button */
+[data-testid="stCameraInput"] button span {
+    color: #ffffff !important;
+}
+
+/* Mobile dark-mode override */
+@media (max-width: 768px) {
+    [data-testid="stCameraInput"] button,
+    [data-testid="stCameraInput"] button span {
+        background-color: #1565c0 !important;
+        color: #ffffff !important;
+    }
+}
+
 }
 
 /* ================== File Uploader Text ================== */
@@ -571,6 +589,7 @@ if image is not None:
 
 
    
+
 
 
 
