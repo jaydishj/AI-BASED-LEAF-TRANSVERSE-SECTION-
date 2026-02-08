@@ -119,8 +119,8 @@ h2, h3, h4, h5, h6 {
 
 /* Take Photo button */
 [data-testid="stCameraInput"] button {
-    background-color: #1565c0 !important;
-    color: #ffffff !important;
+    background-color: #1565c0 !important;  /* Blue button */
+    color: #ffffff !important;             /* WHITE TEXT */
     font-size: 16px !important;
     font-weight: 700 !important;
     border-radius: 16px !important;
@@ -128,7 +128,7 @@ h2, h3, h4, h5, h6 {
     border: none !important;
 }
 
-/* Force text inside */
+/* Force text inside button */
 [data-testid="stCameraInput"] button span {
     color: #ffffff !important;
 }
@@ -622,6 +622,7 @@ if image is not None:
 
 
    
+
 
 
 
