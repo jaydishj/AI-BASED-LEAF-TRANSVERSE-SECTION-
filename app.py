@@ -8,7 +8,15 @@ st.markdown("""
 <style>
 
 /* ================== Animated Background ================== */
-
+.stApp {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(33,150,243,0.08), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(30,136,229,0.10), transparent 45%),
+        linear-gradient(145deg, #f4f9ff, #e3f2fd);
+    background-size: 200% 200%;
+    animation: bgMove 18s ease infinite;
+    color: #0d2a4a;
+}
 
 @keyframes bgMove {
     0% { background-position: 0% 50%; }
